@@ -31,6 +31,13 @@ namespace MauiEidos.Drawables
             bezierPath.CurveTo(Points[1], Points[2], Points[3]);
             bezierPath.CurveTo(Points[4], Points[5], Points[6]);
             canvas.DrawPath(bezierPath);
+
+            canvas.StrokeColor = Colors.Blue;
+            canvas.StrokeSize = 1;
+            canvas.DrawLine(Points[0].X, Points[0].Y, Points[1].X, Points[1].Y);
+            canvas.DrawLine(Points[2].X, Points[2].Y, Points[3].X, Points[3].Y);
+            canvas.DrawLine(Points[3].X, Points[3].Y, Points[4].X, Points[4].Y);
+            canvas.DrawLine(Points[5].X, Points[5].Y, Points[6].X, Points[6].Y);
         }
     }
 }
