@@ -11,6 +11,26 @@
         <GraphicsView Drawable="{StaticResource bezierDrawable}"
                       x:Name="BezierGraphicsView">
         </GraphicsView>
+        <Grid x:Name="CanvasGrid"
+              WidthRequest="1000"
+              HeightRequest="500"
+              Background="Transparent"
+              HorizontalOptions="Start"
+              VerticalOptions="Start">
+            <Ellipse HeightRequest="10"
+                     WidthRequest="10"
+                     Fill="red"
+                     Grid.Column="0"
+                     Grid.Row="246"
+                     HorizontalOptions="Start"
+                     VerticalOptions="Start" />
+            <Ellipse HeightRequest="10"
+                     WidthRequest="10"
+                     Fill="red"
+                     Grid.Column="998"
+                     Grid.Row="246"
+                     HorizontalOptions="Start"
+                     VerticalOptions="Start" />
+        </Grid>
     </Grid>
-
 </ContentPage>
